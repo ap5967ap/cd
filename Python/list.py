@@ -92,8 +92,8 @@ Unlike Sets, Lists can also be added to the existing list with the use of the ap
 #         lst[i].append(j)
 # print(lst)
 
-# lis=["even number" if i%2==0 else "odd number"for i in range(10) ]
-# print(lis)
+lis=["even number" if i%2==0 else "odd number"for i in range(10) ]
+print(lis)
 
 # lst=[num**2 for num in range(10)]
 # print(lst)
