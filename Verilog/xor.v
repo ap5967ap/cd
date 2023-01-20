@@ -1,4 +1,4 @@
-module xor(y,a,b);
+module xor_g(y,a,b);
     input a,b;
     output y;
     wire nA,nB,AnB,nAB;
