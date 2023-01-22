@@ -19,8 +19,8 @@ int *array(){
 /*
 “calloc” or “contiguous allocation” method in C is used to dynamically allocate the specified number of blocks of memory of the specified type. 
 it is very much similar to malloc() but has two different points and these are:
-It initializes each block with a default value ‘0’.
-It has two parameters or arguments as compare to malloc().*/
+    It initializes each block with a default value ‘0’.
+    It has two parameters or arguments as compare to malloc().*/
 //if space is insufficient, allocation fails and returns a NULL pointer.
 int print_array(int arr[], int n){
     for (int i = 0; i < n; i++)

@@ -3,7 +3,7 @@
 #include <math.h>
 #include <string.h>
 void generic_swap(void *a, void *b, int size){//swaps values of any data scalar type
-    void * tempMemomry = malloc(size);
+    void *tempMemomry = malloc(size);
     // memcpy(destination address, source address, size)
     memcpy(tempMemomry,a,size);
     memcpy(a,b,size);
