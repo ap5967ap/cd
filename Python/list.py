@@ -15,28 +15,35 @@ Unlike Sets, Lists can also be added to the existing list with the use of the ap
 #
 # WE can append tupples in list
 # APPEND returns None
-x=(1,2)
-lst=[]
+# x=(1,2)
+# lst=[]
 # for i in range(1,5+1):
 #     lst.append(i)
 # print(lst)
-lst.append(x)#WE can append tupples in list
-print(lst)
+# lst.append(x)#WE can append tupples in list
+# print(lst)
 # 
-# to add any element at any position we use insert() method list.insert(position of element, element)
+# to add any element at any position we use insert() method list.insert(position of element, element)  RETURNS NONE
 # lst=[1,2,3,4,5]
 # lst.insert(2,'e')
 # lst.insert(2,[1,2,3,4])
-# # print(lst)
+# print(lst)
 # lst=['a','b','c','d','e']
 # lst[2:3]=[2,3,4,5,6,7] #gives no error even if space is less or more
 # print(lst)
+# lst=[chr(x) for x in range(97,115)] # ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r']
+# lst[2:6]=[1,2]
+# print(lst)
 
-
-# extend ()-> iterates over its argument and adding each element to the list and extending the list. 
+# extend ()-> iterates over its argument and adding each element to the list and extending the list. #RETURN NONE
 # we add pass any iterable element in extend
 # a='hello'
 # lst=[1,2,3,4,5]
+# lst1=[1,2,3,4,5,6,7]
+# lst2=['a', 'b', 'c', 'd', 'e', 'f']5
+# print(lst1.extend(lst2))
+# print(lst1)
+# print(lst2)
 # lst.extend(a)
 # print(lst) #gives [1, 2, 3, 4, 5, 'h', 'e', 'l', 'l', 'o']
 # import pandas as pd
@@ -49,6 +56,7 @@ print(lst)
 # lst=[]
 # lst.extend(a)# adds each element of a to lst
 # lst.reverse()
+# reversed(lst) #return reversed list but doesn't mutate the original list
 # print(lst)
 # WE GET NONE WHEN WE DO print(lst.reverse())
 # INSTEAD Do, lst.reverse() and then print(lst)
@@ -65,11 +73,23 @@ print(lst)
 # while 1 in lst:
 #     lst.remove(1)
 # print(lst)
+# remove returns None and mutuates the original list
 
-# pop() function can also be used to remove and return an element from the list,
+# pop() function can also be used to remove and return an element from the list, IT MUTATES THE LIST AND RETURNS THE REMOVED ELEMENT
 #  but by default it removes only the last element of the list
 #  to remove an element from a specific position of the List, the index of the element is passed as an argument to the pop() method
 # gives exception when index is out of range
+
+
+# lst=[1,2,3,4,5,6,7,8,9]
+# del lst[5]
+# print(lst)
+# # del can also delete range of index
+# del lst[1:6]
+# print(lst)
+# del gives exception when index is out of range
+# print(del lst[index])  IS A SYNTAX ERROR
+
 
 # list comphrehension
 # newList = [ expression(element) for element in oldList if condition ] oldList is any iterable  from other iterables like tuples, strings, arrays, lists, range, etc.
@@ -82,7 +102,13 @@ print(lst)
 # print(list)
 
 # matrix using list
-# lst=[[j for j in range(3)] for i in range(3)]
+# lst=[[j for j in range(11,14)] for i in range(3)]
+# equivalent
+# lst=[]
+# for i in range(3):
+#     lst.append([])
+#     for j in range(11,14):
+#         lst[i].append(j)
 # print(lst)
 
 # # matrix
@@ -107,12 +133,11 @@ print(lst)
 # lst[0].extend(a.split())
 # lst[1].extend(b.split())
 # lst[2].extend(c.split())
-# print(lst)
-# print(lst[1][0])
-# # TRANSPOSE
-# lst=[[lst[j][i] for j in range(len(lst)) ] for i in range(len(lst[0]))]
-# print(lst)
-
+# # print(lst)
+# # print(lst[1][0])
+# # # TRANSPOSE
+# # lst=[[lst[j][i] for j in range(len(lst)) ] for i in range(len(lst[0]))]
+# # print(lst)
 # x=[]
 # for i in range(len(lst[0])):
 #     x.append([])
@@ -135,8 +160,10 @@ print(lst)
 
 # : Reverse each string in a tuple
 # a=("Hello","World","AP")
+# b=["Hello","World","AP"]
 # lst=[x[::-1] for x in a]
-# print(lst)
+# lst2=[x[::-1] for x in b]
+# print(lst2)
 
 # # Display the sum of digits of all the odd elements in a list.
 # def sumdig(n):
@@ -165,14 +192,8 @@ print(lst)
 # len(), max(), min(), in , not in
 
 # list.count(element)
-# list.index(element, start, end) // start and end are optional
+# list.index(element, start, end) # start and end are optional #This function returns the index of first occurrence of element after beg and before end. 
 
-# lst=[1,2,3,4,5,6,7,8,9]
-# del lst[5]
-# print(lst)
-# # del can also delete range of index
-# del lst[1:6]
-# print(lst)
 
 # pop() SYNTAX = list.pop(index)
 # lst=[1,2,3,4,5,6,7,8,9]
@@ -183,8 +204,9 @@ print(lst)
 # insert(a, x) :- This function inserts an element at the position mentioned in its arguments. It takes 2 arguments, position and element to be added at respective position.
 # remove() :- This function is used to delete the first occurrence of number mentioned in its arguments.
 
-# list.clear() :- This function is used to erase all the elements of list. After this operation, list becomes empty.
-
+# list.clear() :- This function is used to erase all the elements of list. After this operation, list becomes empty. #RETUNS NONE
+# lst=[1,2,3,4,5]
+# print(lst.clear())
 # lst=[4,5,6,9,7,1,10,4,5,6]
 # print(lst.index(5))
 # print(lst.index(7,3,9))# list.index(element,start,end)
@@ -199,3 +221,7 @@ print(lst)
 # sorted returns sorted list but doesn't change original list
 # sort returns None and makes changes in original list
 # sum(list) gives sum of list
+
+a=["hello","i","am","aditya"]
+for i,x in enumerate(a): #i is the index of the element and x is the element
+    print(i,x)

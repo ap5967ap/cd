@@ -1,4 +1,4 @@
-class Person():
+# class Person():
 #     def __init__(self,first,last):
 #         self.fisrt = first
 #         self.last=last

@@ -15,9 +15,9 @@
 # print(id(a))
 # def something():
 #     a=9 #local variable
-#     x=globals()['a']#global variable a and x point to same integer object 15
+#     x=globals()['a']#x get value of global variable a
 #     print(id(x))
-#     x=x+1
+#     x=x+1  #value of global variable is unchanged
 #     print(x)
 #     print(a)
 # something()
@@ -47,9 +47,9 @@
 #     print(x)
 #     g()
 # f()
-def rev(n,r):
-    if n==0:
-        return r
-    else:
-        return rev(n//10,r*10+n%10)
-print(rev(5346,0))
+# def rev(n,r):
+    # if n==0:
+        # return r
+    # else:
+        # return rev(n//10,r*10+n%10)
+# print(rev(5346,0))

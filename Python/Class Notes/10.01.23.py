@@ -2,7 +2,8 @@
 # append takes number as an argument
 # x=[1,2,3]
 # y=4
-# x.extend([y])#it is equivalent line 8
+# x.extend([y])#it is equivalent line 7 
+# x.append([y])#it adds list [y] while x.extend([y]) adds y as as element to list
 # print(x)
 # x.append(y)
 # print(x)
@@ -18,7 +19,7 @@
 # a=[1,2,4,5]
 # a.insert(2,3)#(index, values)
 # print(a)
-# y=[1,2,3,3]
+# y=[1,2,3,311]
 # y.remove(3)
 # print(y)
 # y.reverse()
