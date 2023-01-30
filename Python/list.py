@@ -14,13 +14,14 @@ Unlike Sets, Lists can also be added to the existing list with the use of the ap
 # x,y,z = map(int, input().split())
 #
 # WE can append tupples in list
-# x=(1,2)
-# lst=[]
+# APPEND returns None
+x=(1,2)
+lst=[]
 # for i in range(1,5+1):
 #     lst.append(i)
 # print(lst)
-# lst.append(x)#WE can append tupples in list
-# print(lst)
+lst.append(x)#WE can append tupples in list
+print(lst)
 # 
 # to add any element at any position we use insert() method list.insert(position of element, element)
 # lst=[1,2,3,4,5]
@@ -92,8 +93,8 @@ Unlike Sets, Lists can also be added to the existing list with the use of the ap
 #         lst[i].append(j)
 # print(lst)
 
-lis=["even number" if i%2==0 else "odd number"for i in range(10) ]
-print(lis)
+# lis=["even number" if i%2==0 else "odd number"for i in range(10) ]
+# print(lis)
 
 # lst=[num**2 for num in range(10)]
 # print(lst)
@@ -184,14 +185,14 @@ print(lis)
 
 # list.clear() :- This function is used to erase all the elements of list. After this operation, list becomes empty.
 
-lst=[4,5,6,9,7,1,10,4,5,6]
-print(lst.index(5))
-print(lst.index(7,3,9))# list.index(element,start,end)
+# lst=[4,5,6,9,7,1,10,4,5,6]
+# print(lst.index(5))
+# print(lst.index(7,3,9))# list.index(element,start,end)
 
 # lst=[4,5,6,9,7,1,10,4,5,6]
 # lst.sort(reverse=True) ## by default,sort() method is case sensitive, resulting in all capital letters being sorted before lower case letters:
 # print(lst)
-print(sorted(lst))
+# print(sorted(lst))
 # sort() function is very similar to sorted() but unlike sorted it returns nothing and makes changes to the original sequence. 
 # Moreover, sort() is a method of list class and can only be used with lists.
 # The sorted() function returns a sorted list of the specific iterable object

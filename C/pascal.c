@@ -11,14 +11,14 @@ int fact(int n){
 int ncr(int n, int r){
     return fact(n)/(fact(r)*fact(n-r));
 }
-int main(){
+int main(){  
     int n;
     scanf("%d",&n);
-    for (int i = n - 1; i >= 0; i--)
+    for (int i = 0; i <n; i++)
     {
-       for (int j = 0; j <=i+1; j++)
+       for (int j = 0; j <=i; j++)
        {
-        printf("%d",j);
+        printf("%d ",ncr(i,j));
        }
        printf("\n");
     }
