@@ -56,4 +56,6 @@ class MyClass2:
 x=MyClass2()
 # print(x.__hiddenVariable)#ERROR
 print(x._MyClass2__hiddenVariable) #WORKS
+# also by
+print(getattr(x,'__hiddenVariable'))
 
