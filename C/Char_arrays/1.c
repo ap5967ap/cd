@@ -4,10 +4,12 @@
 
 int main() {
   char *x="HELLO";//OK
-  printf("%c",*++x);
-char q[] = "string1"; 
-printf("%c",*q+1);//OK
-// printf("%c", *q++); 
+  printf("%s",x++);
+  // printf("%s",*x); //This is error
+  printf("\nx =%c\n",*x); //OK
+  char q[] = "string1"; 
+  printf("%c",*q+1);//OK
+  // printf("%c", *q++); 
   int ar[]={1,2,3,4,5};
   printf("%d",*ar+1);
   // printf("%d",*ar++); //ERROR

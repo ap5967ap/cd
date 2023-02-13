@@ -61,7 +61,6 @@
 
 # Python program to explain property() function
 # Alphabet class
-
 class Alphabet:
 	def __init__(self, value):
 		self._value = value
@@ -82,7 +81,7 @@ class Alphabet:
 		del self._value
 
 	value = property(getValue, setValue,
-					delValue, )
+					delValue )
 
 
 # passing the value

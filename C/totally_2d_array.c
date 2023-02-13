@@ -11,7 +11,7 @@ int main(){
     for (int i = 0; i < rows; i++)
     {
         scanf("%d",&cols);
-        a[i] =(int *)calloc(cols, sizeof(int));
+        a[i] =(int *)calloc(cols, sizeof(int*));
     }
     
 return 0;

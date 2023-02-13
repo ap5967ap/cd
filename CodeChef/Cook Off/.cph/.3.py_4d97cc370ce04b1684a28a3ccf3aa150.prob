@@ -1,0 +1,1 @@
+{"name":"Local: 3","url":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\cd\\CodeChef\\Cook Off\\3.py","tests":[{"id":1675867503509,"input":"3\n6\nbabkhj\n3 \nabc \n4 \nqtoo","output":"4\n-1\n2 "}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\cd\\CodeChef\\Cook Off\\3.py","group":"local","local":true}

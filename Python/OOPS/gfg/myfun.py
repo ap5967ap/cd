@@ -56,13 +56,10 @@
 
 # if __name__=="__main__":
 # 	Main()
-# issubclass(Derived,Base)
-# isinstance(obj,class)
+
 
 # super()
-# Python example to show that base
-# class members can be accessed in
-# derived class using super()
+# Python example to show that base class members can be accessed in derived class using super()
 class Base(object):
 
     # Constructor
@@ -93,3 +90,5 @@ class Derived(Base):
 # Driver Code
 d = Derived(10, 20)
 d.printXY()
+# issubclass(Derived,Base)
+# isinstance(obj,class)

@@ -5,8 +5,8 @@
 
 int main(){
     char *ar="HELLO";
-    printf("%c",*ar++);
-    printf("\n");
+    printf("%c\n",*ar++); 
+    printf("%s\n",ar++);
     printf("%s",ar);//ELLO as ar is no pointing to address +1
 return 0;
 }

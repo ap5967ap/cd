@@ -4,7 +4,7 @@
 
 char*read_only(){
     char *str="HELLO";
-    return str;//ok as retuning from read_only
+    return str;//ok as returning from read_only
 }
 char *stack(){
     char str[]="HELLO";
@@ -12,7 +12,7 @@ char *stack(){
 }
 int main(){
     char *s1=read_only();
-    char *s2=read_only();
+    char *s2=stack();
     printf("%s\n",s1);
     printf("%s\n",s2);
 return 0;

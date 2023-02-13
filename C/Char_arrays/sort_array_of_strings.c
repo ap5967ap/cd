@@ -4,9 +4,11 @@
 // #include<string.h>
 
 // int main(){
-//     char *a[]={"HELLO","ADITYA","FUNC","FREE","JAIL"};
+    char *a[]={"HELLO","ADITYA","FUNC","FREE","JAIL"};
 //     int n=sizeof(a)/sizeof(a[0]);//sizeof array
-//     // strlen(a); gives wrong
+
+
+    // gives wrong
 //     for (int i = 0; i < n; i++)
 //     {
 //         for (int j = i+1; j < n; j++)

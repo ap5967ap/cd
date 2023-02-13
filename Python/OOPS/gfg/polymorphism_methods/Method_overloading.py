@@ -1,9 +1,8 @@
-# First product method.
-# Takes two argument and print their
-# product
 # THE LATEST OF THE METHOD IS TAKEN 
 # We may overload the methods but can only use the latest defined method.
 
+# First product method.
+# Takes two argument and print their product
 
 def product(a, b):
     p = a * b
@@ -86,8 +85,6 @@ class Ap:
 
 a=Ap()
 print(a.add('int', 5, 6) ,a.add('str', 'Hi ', 'AP'), sep="\n")
-# # GIVES ERROR
-
-# x=Aa()
-# print (x.add('int', 5, 6))
-# print(x.add('str', 'Hi ', 'Geeks'))
+x=Ap()
+print (x.add('int', 5, 6))
+print(x.add('str', 'Hi ', 'Geeks'))

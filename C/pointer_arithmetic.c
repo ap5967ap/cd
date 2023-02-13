@@ -17,7 +17,6 @@ int main(){
     
 
     printf("%d %c %p %p %p",sizeof(p), *p,p,&a,&x);
-    //size of pointer is size of carrier
     char c=4;
 
 

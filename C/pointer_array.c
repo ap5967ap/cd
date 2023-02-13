@@ -234,13 +234,13 @@ int main(){
     int n;
    scanf("%d", &n);
     int key=0;
-   // scanf("%d", &key);//int scanf
-    // double arr[n];
-    //  for (int i = 0; i < n; i++)
-    //  {
-    //      scanf("%lf", &arr[i]);
-    //  }
-    printf("%d",binary(n));
+   scanf("%d", &key);//int scanf
+    int arr[n];
+     for (int i = 0; i < n; i++)
+     {
+         scanf("%lf", &arr[i]);
+     }
+    printf("%d",max_adjacent_recur(arr,n));
 
 return 0;
 }

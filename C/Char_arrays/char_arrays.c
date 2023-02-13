@@ -10,9 +10,10 @@ int main(){
     // so char c[]={'H','e,'l',"l","o"}; is WRONG
     // 'a' is of type int and "a" is of type char*
     // char *x={'H','e','l','l','o'}; //gives a dangling pointer
-    // char *xa[]={"H", "E", "L", "L", "O",'\0'};
+    char *xa[]={"H", "E", "L", "L", "O",'\0'};
+    // printf("%d\n",strlen((char*)xa)); //no meaning
     // char *xxa="HELLO";
-    char x[5][4]={"HEL","HYE","GAY","OUE","WSA"};//array of strings but all on stack
+    char x[5][3]={"HEL","HYE","GAY","OUE","WSA"};//array of strings but all on stack
     // char x[5][4]={"HEL","HYE","GAY","OUE","WSA"}; one extra space to accommodate \0
     // x[3]="BYE";//error
     x[3][1]='X';//OK
@@ -34,6 +35,9 @@ int main(){
     // x[2][1]="BYE"; //WORKS but in printing array x[2][1] in not printed
     
     // to change value at an element
+    // char asas[3]="HE"; //WRONG but works warning
+    // asas[0]="SDDD";
+    // printf("x=%s\n", asas);
     strcpy(x[1],"GUY");
     for (int i = 0; i < 5; i++)
     {

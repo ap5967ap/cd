@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/adity/OneDrive/Desktop/C++/cd/C/Structures/LetUsC",
-      "program": "c:/Users/adity/OneDrive/Desktop/C++/cd/C/Structures/LetUsC/build/Debug/outDebug",
+      "cwd": "c:/Users/adity/OneDrive/Desktop/C++/cd/C/File IO",
+      "program": "c:/Users/adity/OneDrive/Desktop/C++/cd/C/File IO/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

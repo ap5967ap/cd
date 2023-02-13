@@ -5,7 +5,7 @@ using namespace std;
 // Compare the current element (key) to its predecessor. 
 // If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.
 void insert_sort(int *arr, int n){
-    for(int i=0; i<n; i++){
+    for(int i=1; i<n; i++){
         int j=i-1;
         int key=arr[i];
         while (arr[j]>key && j>=0)
