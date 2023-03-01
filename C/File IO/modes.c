@@ -21,16 +21,28 @@
 #include <stdlib.h>
 
 
+// int main(){
+//     FILE *ptr;
+//     ptr=fopen("ap.txt","r+");
+//     if (ptr==NULL)
+//     {
+//         printf("Error");
+//         exit(1);
+//     }
+//     int x;
+//     fscanf(ptr,"%d",&x);
+//     printf("%c",x);
+// return 0;
+// }
 int main(){
-    FILE *ptr;
-    ptr=fopen("ap.txt","r+");
-    if (ptr==NULL)
-    {
-        printf("Error");
-        exit(1);
-    }
-    int x;
-    fscanf(ptr,"%d",&x);
-    printf("%c",x);
-return 0;
+    char *s=malloc(500);
+    FILE *fp=fopen("ap.txt","r");
+    fsc
+    // for (int i =0;;i++){
+    //     fgets(s,500,fp);
+    //     if(strcmp(s,"bash")==0){
+    //         printf("found");
+    //         break;
+    //     }
+    // }
 }
